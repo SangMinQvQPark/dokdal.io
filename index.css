@@ -77,6 +77,13 @@ p {
   margin: 4px 0;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 /* NavBar */
 #navbar {
   display: flex;
@@ -109,4 +116,32 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-pink);
+}
+
+/* Home */
+#home {
+  background: url(image/home-background.png) center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+.home__avatar {
+  width: 350px;
+  height: 300px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  border: 2px solid var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  padding: 8px 12px;
+  margin: 24px;
+  color: var(--color-white);
+  border-radius: var(--size-border-radius);
 }
